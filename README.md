@@ -1,2 +1,21 @@
 # nso-pc
-NinjaSchool Online PC - Assembly source
+NinjaSchool Online PC (v148) - Assembly source
+
+### Can I modify game source?
+This version written in C# (Unity & .Net core), almost actions do in client side and then send to server.
+So you can modify anything you can do. Such as makes auto attack/pick items, long-range attack/pick, etc.
+
+
+### Notice
+Cannot delay the game, almost tasks must be run in another thread.
+You can embed scripting language to use the APIs easier, like Lua with NLua.
+
+### Classes
+
+Name | Description
+--|--
+Main | Called first for load game resources
+GameSrc | Game activity
+Char | Character/player
+Mob | Target
+Resources | Game resources (string, image, sound)
