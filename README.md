@@ -8,7 +8,7 @@ So you can modify anything you can do. Such as makes auto attack/pick items, lon
 
 ### Notice
 Cannot delay the game, almost tasks must be run in another thread.
-You can embed scripting language to use the APIs easier, like Lua with NLua.
+Can embed scripting language to use the APIs easier, like Lua with NLua.
 
 ### Classes
 
@@ -18,4 +18,7 @@ Main | Called first for load game resources
 GameSrc | Game activity
 Char | Character/player
 Mob | Target
+Service | Message to server
 Resources | Game resources (string, image, sound)
+TileMap | Maps
+mFont, mGraphics | Drawing
