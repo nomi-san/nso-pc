@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A23F8467-5287-4350-8F22-5B9C2E997D35}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>7.3</LangVersion>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Users\Admin\Downloads\NJ_pc148\ninja_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Users\Admin\Downloads\NJ_pc148\ninja_Data\Managed\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionChat.cs" />
+    <Compile Include="ActionPaint.cs" />
+    <Compile Include="ActionUpdate.cs" />
+    <Compile Include="AnimateEffect.cs" />
+    <Compile Include="ArrayCast.cs" />
+    <Compile Include="Arrow.cs" />
+    <Compile Include="Arrowpaint.cs" />
+    <Compile Include="BuNhin.cs" />
+    <Compile Include="Char.cs" />
+    <Compile Include="ChatManager.cs" />
+    <Compile Include="ChatPopup.cs" />
+    <Compile Include="ChatTab.cs" />
+    <Compile Include="ChatTextField.cs" />
+    <Compile Include="Clan.cs" />
+    <Compile Include="Clan_ThanThu.cs" />
+    <Compile Include="Cmd.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CreateCharScr.cs" />
+    <Compile Include="DataInputStream.cs" />
+    <Compile Include="DataOutputStream.cs" />
+    <Compile Include="DataSkillEff.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="Domsang.cs" />
+    <Compile Include="DunItem.cs" />
+    <Compile Include="EffAtutoTemp.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="Effect2.cs" />
+    <Compile Include="EffectAuto.cs" />
+    <Compile Include="EffectCharPaint.cs" />
+    <Compile Include="EffectData.cs" />
+    <Compile Include="EffectInfoPaint.cs" />
+    <Compile Include="EffectPaint.cs" />
+    <Compile Include="EffectTemplate.cs" />
+    <Compile Include="EggMonters.cs" />
+    <Compile Include="EPosition.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="FrameEff.cs" />
+    <Compile Include="FrameImage.cs" />
+    <Compile Include="Friend.cs" />
+    <Compile Include="GameCanvas.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="GameMidlet.cs" />
+    <Compile Include="GamePad.cs" />
+    <Compile Include="GameScr.cs" />
+    <Compile Include="HTTPHandler.cs" />
+    <Compile Include="IActionListener.cs" />
+    <Compile Include="IChatable.cs" />
+    <Compile Include="IKbAction.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageIcon.cs" />
+    <Compile Include="ImageInfo.cs" />
+    <Compile Include="IMessageHandler.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="InfoDlg.cs" />
+    <Compile Include="InfoItem.cs" />
+    <Compile Include="InfoMe.cs" />
+    <Compile Include="Input2Dlg.cs" />
+    <Compile Include="InputDlg.cs" />
+    <Compile Include="InputStream.cs" />
+    <Compile Include="iOSPlugins.cs" />
+    <Compile Include="IPaint.cs" />
+    <Compile Include="iPhoneGeneration.cs" />
+    <Compile Include="iPhoneSettings.cs" />
+    <Compile Include="ipKeyboard.cs" />
+    <Compile Include="ISession.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemMap.cs" />
+    <Compile Include="ItemOption.cs" />
+    <Compile Include="ItemOptionTemplate.cs" />
+    <Compile Include="ItemSprin.cs" />
+    <Compile Include="ItemStands.cs" />
+    <Compile Include="ItemTemplate.cs" />
+    <Compile Include="ItemTemplates.cs" />
+    <Compile Include="ItemTree.cs" />
+    <Compile Include="Key.cs" />
+    <Compile Include="KeyConstant.cs" />
+    <Compile Include="LanguageScr.cs" />
+    <Compile Include="Lanterns.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="Lightning.cs" />
+    <Compile Include="LoginScr.cs" />
+    <Compile Include="LoginScrEng.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="MainObject.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapScr.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="mFont.cs" />
+    <Compile Include="mGraphics.cs" />
+    <Compile Include="mHashtable.cs" />
+    <Compile Include="Mob.cs" />
+    <Compile Include="MobAttack.cs" />
+    <Compile Include="MobMove.cs" />
+    <Compile Include="MobSoul.cs" />
+    <Compile Include="MobTemplate.cs" />
+    <Compile Include="ModelDSkill.cs" />
+    <Compile Include="MonsterDart.cs" />
+    <Compile Include="MotherCanvas.cs" />
+    <Compile Include="MovePoint.cs" />
+    <Compile Include="mResources.cs" />
+    <Compile Include="mScreen.cs" />
+    <Compile Include="MsgDlg.cs" />
+    <Compile Include="mSystem.cs" />
+    <Compile Include="MyAudioClip.cs" />
+    <Compile Include="MyImage.cs" />
+    <Compile Include="MyKeyMap.cs" />
+    <Compile Include="MyRandom.cs" />
+    <Compile Include="myReader.cs" />
+    <Compile Include="MyVector.cs" />
+    <Compile Include="myWriter.cs" />
+    <Compile Include="NClass.cs" />
+    <Compile Include="Net.cs" />
+    <Compile Include="NinjaUtil.cs" />
+    <Compile Include="Npc.cs" />
+    <Compile Include="NpcTemplate.cs" />
+    <Compile Include="Out.cs" />
+    <Compile Include="Paint.cs" />
+    <Compile Include="Part.cs" />
+    <Compile Include="PartFrame.cs" />
+    <Compile Include="PartImage.cs" />
+    <Compile Include="Party.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranked.cs" />
+    <Compile Include="RegisterScr.cs" />
+    <Compile Include="Res.cs" />
+    <Compile Include="RMS.cs" />
+    <Compile Include="ScaleGUI.cs" />
+    <Compile Include="Scroll.cs" />
+    <Compile Include="ScrollResult.cs" />
+    <Compile Include="SelectCharScr.cs" />
+    <Compile Include="SelectServerScr.cs" />
+    <Compile Include="ServerEffect.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="Session_ME.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="SkillInfoPaint.cs" />
+    <Compile Include="SkillOption.cs" />
+    <Compile Include="SkillOptionTemplate.cs" />
+    <Compile Include="SkillPaint.cs" />
+    <Compile Include="Skills.cs" />
+    <Compile Include="SkillTemplate.cs" />
+    <Compile Include="SmallImage.cs" />
+    <Compile Include="SMS.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="SplashScr.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="StaticObj.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskOrder.cs" />
+    <Compile Include="TaskTemplate.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="TField.cs" />
+    <Compile Include="TileMap.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="TouchScreenKeyboard.cs" />
+    <Compile Include="TouchScreenKeyboardType.cs" />
+    <Compile Include="Waypoint.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
