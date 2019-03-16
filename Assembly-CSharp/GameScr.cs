@@ -15506,14 +15506,15 @@ public class GameScr : mScreen, IActionListener, IChatable
 		{
 			return;
 		}
-		if (GameCanvas.isTouchControlLargeScreen && !isSmallUI() && (isOpenUI() || isPaintPopup() || isPaintUI()))
-		{
-			setInfoFrameForLargeScreen();
-			paintInforFrame(g);
-			resetTranslate(g);
-			paintMultiLine(g, mFont.tahoma_7_white, mResources.CHOOSE_ITEM, inforX + inforW / 2, inforY + inforH / 2 - 20, 2);
-		}
-		if (!isPaintItemInfo || itemFocus == null || itemFocus.template == null)
+        mFont mFont = mFont.tahoma_7b_white;
+        if (GameCanvas.isTouchControlLargeScreen && !isSmallUI() && (isOpenUI() || isPaintPopup() || isPaintUI()))
+        {
+            setInfoFrameForLargeScreen();
+            paintInforFrame(g);
+            resetTranslate(g);
+            paintMultiLine(g, mFont.tahoma_7_white, mResources.CHOOSE_ITEM, inforX + inforW / 2, inforY + inforH / 2 - 20, 2);
+        }
+        if (!isPaintItemInfo || itemFocus == null || itemFocus.template == null)
 		{
 			return;
 		}
@@ -15595,28 +15596,27 @@ public class GameScr : mScreen, IActionListener, IChatable
 		}
 		indexRowMax = 3;
 		yPaint = inforY + 3;
-		mFont mFont = mFont.tahoma_7b_white;
-		if (item.upgrade >= 1 && item.upgrade < 4)
-		{
-			mFont = mFont.tahoma_7b_blue;
-		}
-		else if (item.upgrade >= 4 && item.upgrade < 8)
-		{
-			mFont = mFont.tahoma_7b_green;
-		}
-		else if (item.upgrade >= 8 && item.upgrade < 12)
-		{
-			mFont = mFont.tahoma_7b_yellow;
-		}
-		else if (item.upgrade >= 12 && item.upgrade < 15)
-		{
-			mFont = mFont.tahoma_7b_purple;
-		}
-		else if (item.upgrade >= 15)
-		{
-			mFont = mFont.tahoma_7b_red;
-		}
-		if (item.img != null)
+        if (item.upgrade >= 1 && item.upgrade < 4)
+        {
+            mFont = mFont.tahoma_7b_blue;
+        }
+        else if (item.upgrade >= 4 && item.upgrade < 8)
+        {
+            mFont = mFont.tahoma_7b_green;
+        }
+        else if (item.upgrade >= 8 && item.upgrade < 12)
+        {
+            mFont = mFont.tahoma_7b_yellow;
+        }
+        else if (item.upgrade >= 12 && item.upgrade < 15)
+        {
+            mFont = mFont.tahoma_7b_purple;
+        }
+        else if (item.upgrade >= 15)
+        {
+            mFont = mFont.tahoma_7b_red;
+        }
+        if (item.img != null)
 		{
 			g.drawRegion(item.img, 0, 0, mGraphics.getImageWidth(item.img), mGraphics.getImageHeight(item.img), 0, inforX + inforW / 2, yPaint + inforH - 10, mGraphics.BOTTOM | mGraphics.HCENTER);
 		}
@@ -20944,76 +20944,76 @@ public class GameScr : mScreen, IActionListener, IChatable
 			ystart += 10;
 		}
 		fnt.drawString(g, timeC, popupX + popupW / 2, ystart + 12, 2);
-		mFont.tahoma_7_yellow.drawString(g, mResources.winRate, popupX + popupW / 2, ystart + 30, 2);
-		paintPercent(g, percentWin1Lucky_Draw, popupX + popupW / 2, ystart + 42, popupW / 2, 12, percentWin1Lucky_Draw + "." + percentWin2Lucky_Draw + "%");
+        mFont mFont = mFont.tahoma_7_white;
+        mFont.tahoma_7_yellow.drawString(g, mResources.winRate, popupX + popupW / 2, ystart + 30, 2);
+        paintPercent(g, percentWin1Lucky_Draw, popupX + popupW / 2, ystart + 42, popupW / 2, 12, percentWin1Lucky_Draw + "." + percentWin2Lucky_Draw + "%");
 		indexRowMax = texts.size();
 		scrMain.setStyle(indexRowMax, 12, popupX, ystart + 48, popupW, popupH - 42 - ((textsTitle != null) ? 10 : 0), styleUPDOWN: true, 1);
 		scrMain.setClip(g);
 		yPaint = ystart + 48;
-		mFont mFont = mFont.tahoma_7_white;
-		for (int i = 0; i < texts.size(); i++)
-		{
-			string text = (string)texts.elementAt(i);
-			if (text == null || texts == null || mFont == null)
-			{
-				break;
-			}
-			if (text.StartsWith("c"))
-			{
-				if (text.StartsWith("c0"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_white;
-				}
-				else if (text.StartsWith("c1"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7b_yellow;
-				}
-				else if (text.StartsWith("c2"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7b_white;
-				}
-				else if (text.StartsWith("c3"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_yellow;
-				}
-				else if (text.StartsWith("c4"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7b_red;
-				}
-				else if (text.StartsWith("c5"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_red;
-				}
-				else if (text.StartsWith("c6"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_grey;
-				}
-				else if (text.StartsWith("c7"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7b_blue;
-				}
-				else if (text.StartsWith("c8"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_blue;
-				}
-				else if (text.StartsWith("c9"))
-				{
-					text = text.Substring(2);
-					mFont = mFont.tahoma_7_green;
-				}
-			}
-			mFont.drawString(g, text, popupX + popupW / 2, yPaint += 12, 2);
-		}
-	}
+        for (int i = 0; i < texts.size(); i++)
+        {
+            string text = (string)texts.elementAt(i);
+            if (text == null || texts == null || mFont == null)
+            {
+                break;
+            }
+            if (text.StartsWith("c"))
+            {
+                if (text.StartsWith("c0"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_white;
+                }
+                else if (text.StartsWith("c1"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7b_yellow;
+                }
+                else if (text.StartsWith("c2"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7b_white;
+                }
+                else if (text.StartsWith("c3"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_yellow;
+                }
+                else if (text.StartsWith("c4"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7b_red;
+                }
+                else if (text.StartsWith("c5"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_red;
+                }
+                else if (text.StartsWith("c6"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_grey;
+                }
+                else if (text.StartsWith("c7"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7b_blue;
+                }
+                else if (text.StartsWith("c8"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_blue;
+                }
+                else if (text.StartsWith("c9"))
+                {
+                    text = text.Substring(2);
+                    mFont = mFont.tahoma_7_green;
+                }
+            }
+            mFont.drawString(g, text, popupX + popupW / 2, yPaint += 12, 2);
+        }
+    }
 
 	public void resetCaptcha()
 	{
