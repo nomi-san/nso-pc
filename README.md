@@ -15,7 +15,7 @@ Can embed scripting language to use the APIs easier, like Lua with NLua.
 Name | Description
 --|--
 Main | Called first for load game resources
-GameSrc | Game activity
+GameScr | Game activity
 Char | Character/player
 Mob | Target
 Service | Message to server
